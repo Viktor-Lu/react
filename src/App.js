@@ -1,19 +1,35 @@
 
+import React from 'react';
 import './App.css';
 // рисуем функцию app
 
 const App=()=> {
   return (
-    <div ClassName='app-wrapper'>
-    <header ClassName='header'>
+    <div className='app-wrapper'>
+    <header className='header'>
     <img src='https://say-hi.me/wp-content/uploads/2020/02/AI-logo-maker.jpg' />
     </header>
-    <nav ClassName='nav'>
-    <div> Profile</div>
-    <div> Messages</div>
-    <div> News</div>
+    <nav className='nav'>
+    <div> <a href=''> Profile</a></div>
+    <div><a href=''> Messages</a></div>
+    <div><a href=''> News </a></div>
+    <div><a href=''> Music </a></div>
+    <div><a href=''> Settings </a></div>
+
     </nav>
-    <div ClassName='content'> Main Content</div>
+    < div className = 'content' >
+    <div>
+    <img src='https://cdnn21.img.ria.ru/images/151794/84/1517948413_0:105:2000:1230_600x0_80_0_0_e12706701a13b6260e2fa5f2e4626c94.jpg'></img>
+    </div>
+    <div>
+    <img src='https://avatars.mds.yandex.net/i?id=bd0b536ab5c3f88dae1f186898c7aac8-5886220-images-thumbs&n=13'></img>
+    </div>
+    <div>Ava+description</div>
+    <div>My posts</div>
+    <div>New posts</div>
+    <div> Posts1</div>
+    <div>Posts2</div>
+    </div >
     </div>
   )
 }

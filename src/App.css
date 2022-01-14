@@ -1,30 +1,36 @@
 .app-wrapper {
-grid-template-areas:
-"h h"
-"n c";
-
-display: grid;
-grid-template-rows: 60px 1fr;
-grid-template-columns: 2fr 10fr;
-/* grid-gap:  */
+  width: 1200px;
+  margin: auto;
+  /* Оформляем столбцы и строки через grid */
+  grid-template-areas:
+    "h h"
+    "n c";
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 1px;
 }
 
 .nav {
-grid-area: n;
-background-color: yellow;
+  grid-area: n;
+  background-color: yellow;
 }
 
 .header {
-grid-area: h;
-background-color: green;
+  grid-area: h;
+  background-color: green;
 }
-
-.img {
-  width: 20px;
-}
-
 
 .content {
-grid-area: c;
-background-color: silver;
+  grid-area: c;
+  background-color: orange;
+}
+
+.header img {
+  width: 60px;
+}
+
+.content img {
+  height: 200px;
+  width: 300px;
 }
