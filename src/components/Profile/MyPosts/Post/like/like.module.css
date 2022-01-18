@@ -1,0 +1,9 @@
+.like {
+  color: red;
+  font-style: italic;
+}
+
+.like img {
+  height: 20px;
+  width: 20px;
+}
