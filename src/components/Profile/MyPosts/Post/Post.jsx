@@ -4,9 +4,9 @@ import classes from './Post.module.css';
 const Post = () => {
   return (
 
-  < div className={classes.item}>
-<img  src='https://video-editor.su/images/kak-snimalsya-film-avatar_01.jpg'> </img>
-  Post
+  <div className ={classes.item}>
+<img src='https://hornews.com/images/news_large/c1d4b2b8ec608ea72764c5678816d5c9.jpg' ></img>
+  post 1
   <div>
   <span>like</span>
   </div>
