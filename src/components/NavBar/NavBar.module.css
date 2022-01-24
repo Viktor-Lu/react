@@ -1,6 +1,7 @@
 .nav {
   grid-area: n;
   background-color: #696969;
+  padding: 30px;
 }
 
 .item {
@@ -8,7 +9,11 @@
   height: 24px;
 }
 
-.item.active {
-  color: red;
+.item a.activeLink {
+  color: black;
   height: 30px;
+}
+.item a {
+  color:#f7e1d8;
+  text-decoration: none;
 }
