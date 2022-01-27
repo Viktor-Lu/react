@@ -10,7 +10,10 @@
 }
 .dialogsItems{
     padding: 10px;
-
+}
+.dialogs a {
+    text-decoration: none;
+    color:#f7e1d8;
 }
 
 .dialogsItems .active {
@@ -24,4 +27,7 @@
 .message {
     padding: 10px;
 
+}
+.dialogs .activeLink{
+    color:crimson;
 }
