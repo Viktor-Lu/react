@@ -9,9 +9,8 @@
   color: white;
   height: 24px;
 }
-
-.item a.activeLink {
-  color: black;
+.item a.active {
+  color:black;
   height: 30px;
 }
 .item a {
