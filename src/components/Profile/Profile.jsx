@@ -1,15 +1,13 @@
 import React from 'react';
 import MyPosts from './MyPosts/MyPosts';
-import classes from './Profile.module.css';
 import ProfileInfo from "./MyPosts/ProfileInfo/ProfileInfo";
 
-const Profile = () => {
+const Profile = (props) => {
     return (
         <div  className='classes.img'>
             <ProfileInfo/>
-            <MyPosts/>
+            <MyPosts Posts={props.Posts}/>
         </div>
     )
 }
-
 export default Profile;

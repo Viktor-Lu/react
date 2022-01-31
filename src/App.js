@@ -10,15 +10,16 @@ import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 // рисуем функцию app
 
-const App = () => {
+const App = (props) => {
+
     return (
             <div className='app-wrapper'>
                 <Header/>
-                <NavBar/>
+                <NavBar />
                 <div className='app-wrapper-content'>
                     <Routes>
-                    <Route path='profile' element={<Profile/>}/>
-                    <Route path='dialogs' element={<Dialogs/>}/>
+                    <Route path='profile' element={<Profile Posts={props.Posts}/>}/>
+                    <Route path='dialogs' element={<Dialogs dialogsDate={props.dialogsDate} messagesDate={props.messagesDate}/>}/>
                     <Route path='news' element={<News/>}/>
                     <Route path='music' element={<Music/>}/>
                     <Route path='settings' element={<Settings/>}/>
