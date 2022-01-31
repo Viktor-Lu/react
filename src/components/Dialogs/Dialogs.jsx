@@ -6,23 +6,19 @@ import Message from "./Message/Message";
 const Dialogs = (props) => {
 
 
-    let dialogsDateElement = props.dialogsDate.map(d => <DialogsItem name={d.name} id={d.id}/>);
+    let dialogsDateElement = props.state.dialogsDate.map(d => <DialogsItem name={d.name} id={d.id}/>);
 
-    let messageDateElement = props.messagesDate.map(m => <Message message={m.message}/>);
+    let messageDateElement = props.state.messagesDate.map(m => <Message message={m.message}/>);
 
     return (
         <div className={classes.dialogs}>
             <div className={classes.dialogsItems}>
                 {dialogsDateElement}
             </div>
-
             <div className={classes.message}>
                 {messageDateElement}
             </div>
-
-
         </div>
-
     )
 }
 
