@@ -21,8 +21,11 @@
     color: crimson;
 }
 
-.items {
-
+.dialogsItems img {
+    height: 20px;
+    width: 20px;
+    border-radius: 15px;
+;
 }
 
 .message {

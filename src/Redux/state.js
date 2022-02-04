@@ -8,13 +8,13 @@ let state={
     },
     dialogPage:{
         dialogsDate:[
-            {id: 1, name: 'Andrew'},
-            {id: 2, name: 'Dmitry'},
-            {id: 3, name: 'Sasha'},
-            {id: 4, name: 'Sveta'},
-            {id: 5, name: 'Valera'},
-            {id: 6, name: 'Viktor'}
-        ],
+            {id: 1, name: 'Andrew',ava:'https://upload.wikimedia.org/wikipedia/commons/8/85/Smiley.svg'},
+            {id: 3, name: 'Sasha',ava:'https://upload.wikimedia.org/wikipedia/commons/8/85/Smiley.svg'},
+            {id: 4, name: 'Sveta',ava:'https://upload.wikimedia.org/wikipedia/commons/8/85/Smiley.svg'},
+            {id: 5, name: 'Valera',ava:'https://upload.wikimedia.org/wikipedia/commons/8/85/Smiley.svg'},
+            {id: 6, name: 'Viktor',ava:'https://upload.wikimedia.org/wikipedia/commons/8/85/Smiley.svg'},
+            {id:7,name:'Valera',ava:'https://upload.wikimedia.org/wikipedia/commons/8/85/Smiley.svg'},
+                    ],
         messagesDate:[
             {id: 1, message: 'Hi'},
             {id: 2, message: 'Yo'},
