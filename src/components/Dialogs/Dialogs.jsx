@@ -3,6 +3,7 @@ import classes from './Dialogs.module.css';
 import DialogsItem from "./DialogsItem/DialogsItem";
 import Message from "./Message/Message";
 
+
 const Dialogs = (props) => {
 
 
@@ -12,8 +13,10 @@ const Dialogs = (props) => {
 
 let newPostElement=React.createRef();
 let addPostText=()=>{
+    debugger;
     let text=newPostElement.current.value;
     alert(text);
+
     }
 
     return (

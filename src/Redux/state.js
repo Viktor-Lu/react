@@ -1,3 +1,6 @@
+import {rerenderEnter} from "../render";
+
+
 let state={
     profilePage:{
         Posts:[
@@ -22,5 +25,17 @@ let state={
         ],
     }
 }
+
+export let addPost=(Post)=>{
+    let newPost={
+        id:4,
+        message:Post,
+        likesCount:0
+    };
+
+    state.profilePage.Posts.push(newPost);
+    rerenderEnter(state);
+}
+
 
 export default state;

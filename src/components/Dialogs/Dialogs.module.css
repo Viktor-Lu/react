@@ -8,18 +8,16 @@
     font-size: 16px;
 
 }
-.dialogs a.active {
-    color: fuchsia;
 
-}
 .dialogs a {
     text-decoration: none;
     color:black;
 }
 
-.dialogsItems a.active {
-    color: crimson;
+.dialogsItems a:hover {
+    color: green;
 }
+
 
 .dialogsItems img {
     height: 20px;
@@ -30,6 +28,5 @@
 
 .message {
     padding: 10px;
-
 }
 

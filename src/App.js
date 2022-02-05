@@ -8,6 +8,7 @@ import {Routes,Route} from 'react-router-dom';
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
+
 // рисуем функцию app
 
 const App = (props) => {
@@ -18,8 +19,8 @@ const App = (props) => {
                 <NavBar />
                 <div className='app-wrapper-content'>
                     <Routes>
-                    <Route path='profile' element={<Profile state={props.state.profilePage}/>}/>
-                    <Route path='dialogs' element={<Dialogs state={props.state.dialogPage}/>}/>
+                    <Route path='profile' element={<Profile state={props.state.profilePage} addPost={props.addPost}/>}/>
+                    <Route path='dialogs' element={<Dialogs state={props.state.dialogPage} addPost={props.addPost}/>}/>
                     <Route path='news' element={<News/>}/>
                     <Route path='music' element={<Music/>}/>
                     <Route path='settings' element={<Settings/>}/>
