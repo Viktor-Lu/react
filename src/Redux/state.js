@@ -1,13 +1,15 @@
 import {rerenderEnter} from "../render";
 
 
+
 let state={
     profilePage:{
         Posts:[
             {id:1,message:'My first Post',likesCount:1234},
             {id:2,message:'My second Post',likesCount:260},
             {id:3,message:'I like Post',likesCount:12}
-        ]
+        ],
+        newPostText:'it-kamasutra'
     },
     dialogPage:{
         dialogsDate:[
@@ -26,14 +28,23 @@ let state={
     }
 }
 
-export let addPost=(Post)=>{
+window.state=state;
+
+export let addPost=()=>{
     let newPost={
         id:4,
-        message:Post,
+        message:state.profilePage.newPostText,
         likesCount:0
     };
 
     state.profilePage.Posts.push(newPost);
+    state.profilePage.newPostText='';
+    rerenderEnter(state);
+}
+
+
+export let updateNewPostText=(text)=>{
+    state.profilePage.newPostText=text;
     rerenderEnter(state);
 }
 
